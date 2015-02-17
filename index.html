@@ -6,24 +6,14 @@
         tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
       });
     </script>
-    <script type="text/javascript"
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/render.js"></script>
   </head>
   <body>
-  <textarea class="mathinput" cols="80" rows="10" style="resize: none"></textarea>
-  <div class="mathguy"></div>
-  <script type="text/javascript">
-    var main = function() {
-      $('.mathinput').keyup(function() {
-        var text = $('.mathinput').val();
-        $('.mathguy').text("$$"+text+"$$");
-        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-      });
-    }
-    $(document).ready(main);  
-  </script>
-
+    <h1> WE LOVE MATH </h1>
+    <textarea class="mathinput" cols="80" rows="10" style="resize: none" placeholder="a + b = shek..."></textarea>
+    <br />
+    <div class="mathguy"></div>
   </body>
 </html>
